@@ -1,6 +1,4 @@
-﻿// Binary Search Analysis Project.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-#include <iostream>
+﻿#include <iostream>
 #include <vector>
 #include <algorithm>
 #include <random>
@@ -12,10 +10,10 @@ int main() {
     double SumRBS = 0, SumIBS = 0, SumSeqS = 0;
 
     // Array sizes to test
-    const int testSizes[] = { 5000, 50000, 100000, 150000, 1000000 };
+    const size_t testSizes[] = { 5000, 50000, 100000, 150000, 1000000 };
 
     // Loop through each size
-    for (const int N : testSizes) {
+    for (const size_t N : testSizes) {
         for (int run = 0; run < 10; ++run) {
             // Fill vector with random numbers
             std::vector<int> vec(N);
@@ -57,4 +55,3 @@ int main() {
 
     return 0;
 }
-
